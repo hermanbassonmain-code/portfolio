@@ -6,6 +6,7 @@ import { profile } from "@/data/cv";
 const links = [
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
+  { href: "#projects", label: "Projects" },
   { href: "#experience", label: "Experience" },
   { href: "#education", label: "Education" },
   { href: "#contact", label: "Contact" },
@@ -34,7 +35,7 @@ export default function Nav() {
           <a
             href={profile.cvFile}
             download
-            className="rounded-full bg-accent px-4 py-2 text-sm font-medium text-accent-foreground transition-opacity hover:opacity-90"
+            className="gradient-bg rounded-full px-4 py-2 text-sm font-medium text-white transition-transform hover:scale-[1.03]"
           >
             Download CV
           </a>
@@ -73,7 +74,7 @@ export default function Nav() {
               href={profile.cvFile}
               download
               onClick={() => setOpen(false)}
-              className="mt-2 rounded-full bg-accent px-4 py-2 text-center text-sm font-medium text-accent-foreground"
+              className="gradient-bg mt-2 rounded-full px-4 py-2 text-center text-sm font-medium text-white"
             >
               Download CV
             </a>

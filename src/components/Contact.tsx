@@ -46,7 +46,7 @@ export default function Contact() {
         <div className="flex flex-col gap-3">
           <a
             href={`mailto:${profile.email}`}
-            className="inline-flex w-fit items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-accent-foreground transition-opacity hover:opacity-90"
+            className="gradient-bg inline-flex w-fit items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium text-white shadow-lg shadow-accent-2/25 transition-transform hover:scale-[1.03]"
           >
             Email {profile.email}
           </a>
@@ -104,7 +104,7 @@ export default function Contact() {
           <button
             type="submit"
             disabled={status === "submitting"}
-            className="w-fit rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-accent-foreground transition-opacity hover:opacity-90 disabled:opacity-60"
+            className="gradient-bg w-fit rounded-full px-5 py-2.5 text-sm font-medium text-white shadow-lg shadow-accent-2/25 transition-transform hover:scale-[1.03] disabled:opacity-60 disabled:hover:scale-100"
           >
             {status === "submitting" ? "Sending..." : "Send message"}
           </button>

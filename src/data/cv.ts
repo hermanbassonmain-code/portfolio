@@ -59,6 +59,58 @@ export type Job = {
   bullets: string[];
 };
 
+export type Project = {
+  title: string;
+  org: string;
+  description: string;
+  tags: string[];
+};
+
+export const projects: Project[] = [
+  {
+    title: "iGaming Platform Integrations",
+    org: "Rank Interactive",
+    description:
+      "Led integration of third-party gaming providers into a digital gaming platform, aligning transaction processing and game-management services consumed by front-end applications, backed by production incident response and hypercare for smooth releases.",
+    tags: ["C#", "ASP.NET", "React", "MS SQL", "DynamoDB", "AWS"],
+  },
+  {
+    title: "AI Agent & Agentic Workflow Enablement",
+    org: "Rank Interactive",
+    description:
+      "Investigated and built proof-of-concept AI agents and agentic development workflows for the engineering organisation, evaluating tools such as GitHub Copilot and Kiro/KiroCrew to accelerate delivery and knowledge-sharing across teams.",
+    tags: ["GitHub Copilot", "Kiro", "KiroCrew", "TypeScript", ".NET"],
+  },
+  {
+    title: "Fibre ISP Portals & Internal Systems",
+    org: "Metrofibre Networx",
+    description:
+      "Built customer-facing websites, portals, and internal systems for a fibre network operator, from production deployments through to direct stakeholder and client engagement, on a microservices-oriented .NET stack.",
+    tags: ["C#", ".NET", "Razor", "SASS", "REST APIs", "MS SQL"],
+  },
+  {
+    title: "National Vehicle & Licensing System",
+    org: "Face Technologies — Senegal",
+    description:
+      "Contributed front- and back-end functionality to a national vehicle registration and driver-licensing platform built for a government client, on a Java and C# MVC stack.",
+    tags: ["Java", "C# .NET MVC", "Hibernate", "EJB", "Oracle"],
+  },
+  {
+    title: "Government Public Service Platform",
+    org: "Face Technologies — Uganda",
+    description:
+      "Delivered features for a digital public-service platform for Uganda's Ministry of Public Service, working across a Java and ZK technology stack in a distributed government IT environment.",
+    tags: ["Java", "ZK", "C#", "MySQL", "Oracle"],
+  },
+  {
+    title: "Telecom Ticketing, Access Control & CRM",
+    org: "Blue Label Telecoms",
+    description:
+      "Built and maintained a suite of production systems for a telecoms group — including the main ticketing website, access control system, Sugar CRM, and user portal — on a Linux/LAMP stack with automated Ansible deployments.",
+    tags: ["PHP", "LAMP", "JavaScript", "MySQL", "Docker", "Ansible"],
+  },
+];
+
 export const experience: Job[] = [
   {
     role: "Senior Software Engineer",
