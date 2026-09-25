@@ -1,0 +1,17 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: portfolio_app
+    restart: unless-stopped
+    expose:
+      - "3000"
+    networks:
+      - household-hub_default
+    labels:
+      - "com.centurylabs.watchtower.enable=true"
+
+networks:
+  household-hub_default:
+    external: true
