@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://portfolio.herribal.co.za"),
   title: "Herman Basson — Senior Software Engineer",
   description:
     "Herman Basson is a Senior Software Engineer with 8+ years of full-stack development experience across commercial, telecommunications, gaming, and enterprise sectors. View experience, skills, and get in touch.",
@@ -32,6 +33,12 @@ export const metadata: Metadata = {
     description:
       "Senior Software Engineer with 8+ years of full-stack development experience. View experience, skills, and get in touch.",
     type: "profile",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Herman Basson — Senior Software Engineer",
+    description:
+      "Senior Software Engineer with 8+ years of full-stack development experience. View experience, skills, and get in touch.",
   },
 };
 

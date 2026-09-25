@@ -3,7 +3,6 @@ export const profile = {
   title: "Senior Software Engineer",
   tagline: "Full-Stack Development & Project Leadership",
   location: "Cape Town, South Africa",
-  phone: "+27 82 947 7162",
   email: "herman-b@live.com",
   linkedin: "https://www.linkedin.com/in/herman-basson",
   linkedinLabel: "linkedin.com/in/herman-basson",

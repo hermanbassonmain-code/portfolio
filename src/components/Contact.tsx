@@ -51,12 +51,6 @@ export default function Contact() {
             Email {profile.email}
           </a>
           <a
-            href={`tel:${profile.phone.replace(/\s/g, "")}`}
-            className="inline-flex w-fit items-center gap-2 text-sm text-muted hover:text-accent"
-          >
-            {profile.phone}
-          </a>
-          <a
             href={profile.linkedin}
             target="_blank"
             rel="noopener noreferrer"

@@ -14,10 +14,6 @@ export default function Hero() {
       <div className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-sm text-muted">
         <span>{profile.location}</span>
         <span className="hidden sm:inline">•</span>
-        <a href={`tel:${profile.phone.replace(/\s/g, "")}`} className="hover:text-accent">
-          {profile.phone}
-        </a>
-        <span className="hidden sm:inline">•</span>
         <a href={`mailto:${profile.email}`} className="hover:text-accent">
           {profile.email}
         </a>
