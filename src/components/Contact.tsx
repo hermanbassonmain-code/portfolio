@@ -46,7 +46,7 @@ export default function Contact() {
         <div className="flex flex-col gap-3">
           <a
             href={`mailto:${profile.email}`}
-            className="gradient-bg inline-flex w-fit items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium text-white shadow-lg shadow-accent-2/25 transition-transform hover:scale-[1.03]"
+            className="inline-flex w-fit items-center gap-2 rounded-md border border-accent bg-accent px-5 py-2.5 text-sm font-medium text-accent-foreground transition-shadow hover:glow-accent"
           >
             Email {profile.email}
           </a>
@@ -62,7 +62,7 @@ export default function Contact() {
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <div>
-            <label htmlFor="name" className="mb-1 block text-sm font-medium">
+            <label htmlFor="name" className="font-label mb-1 block text-xs text-muted">
               Name
             </label>
             <input
@@ -70,12 +70,12 @@ export default function Contact() {
               name="name"
               type="text"
               required
-              className="w-full rounded-lg border border-border bg-background px-3.5 py-2.5 text-sm outline-none focus:border-accent"
+              className="w-full rounded-md border border-border bg-background px-3.5 py-2.5 text-sm outline-none focus:border-accent"
               placeholder="Your name"
             />
           </div>
           <div>
-            <label htmlFor="email" className="mb-1 block text-sm font-medium">
+            <label htmlFor="email" className="font-label mb-1 block text-xs text-muted">
               Email
             </label>
             <input
@@ -83,12 +83,12 @@ export default function Contact() {
               name="email"
               type="email"
               required
-              className="w-full rounded-lg border border-border bg-background px-3.5 py-2.5 text-sm outline-none focus:border-accent"
+              className="w-full rounded-md border border-border bg-background px-3.5 py-2.5 text-sm outline-none focus:border-accent"
               placeholder="you@company.com"
             />
           </div>
           <div>
-            <label htmlFor="message" className="mb-1 block text-sm font-medium">
+            <label htmlFor="message" className="font-label mb-1 block text-xs text-muted">
               Message
             </label>
             <textarea
@@ -96,7 +96,7 @@ export default function Contact() {
               name="message"
               required
               rows={4}
-              className="w-full rounded-lg border border-border bg-background px-3.5 py-2.5 text-sm outline-none focus:border-accent"
+              className="w-full rounded-md border border-border bg-background px-3.5 py-2.5 text-sm outline-none focus:border-accent"
               placeholder="Tell me a bit about the role or opportunity..."
             />
           </div>
@@ -104,7 +104,7 @@ export default function Contact() {
           <button
             type="submit"
             disabled={status === "submitting"}
-            className="gradient-bg w-fit rounded-full px-5 py-2.5 text-sm font-medium text-white shadow-lg shadow-accent-2/25 transition-transform hover:scale-[1.03] disabled:opacity-60 disabled:hover:scale-100"
+            className="w-fit rounded-md border border-accent bg-accent px-5 py-2.5 text-sm font-medium text-accent-foreground transition-shadow hover:glow-accent disabled:opacity-60 disabled:hover:shadow-none"
           >
             {status === "submitting" ? "Sending..." : "Send message"}
           </button>

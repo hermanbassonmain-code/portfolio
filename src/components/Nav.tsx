@@ -27,7 +27,7 @@ export default function Nav() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-muted transition-colors hover:text-foreground"
+              className="font-label text-xs text-muted transition-colors hover:text-accent"
             >
               {link.label}
             </a>
@@ -35,7 +35,7 @@ export default function Nav() {
           <a
             href={profile.cvFile}
             download
-            className="gradient-bg rounded-full px-4 py-2 text-sm font-medium text-white transition-transform hover:scale-[1.03]"
+            className="rounded-md border border-accent bg-accent px-4 py-2 text-sm font-medium text-accent-foreground transition-shadow hover:glow-accent"
           >
             Download CV
           </a>
@@ -65,7 +65,7 @@ export default function Nav() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="rounded-md px-3 py-2 text-sm text-muted hover:bg-surface hover:text-foreground"
+                className="font-label rounded-md px-3 py-2 text-xs text-muted hover:bg-surface hover:text-accent"
               >
                 {link.label}
               </a>
@@ -74,7 +74,7 @@ export default function Nav() {
               href={profile.cvFile}
               download
               onClick={() => setOpen(false)}
-              className="gradient-bg mt-2 rounded-full px-4 py-2 text-center text-sm font-medium text-white"
+              className="mt-2 rounded-md border border-accent bg-accent px-4 py-2 text-center text-sm font-medium text-accent-foreground"
             >
               Download CV
             </a>

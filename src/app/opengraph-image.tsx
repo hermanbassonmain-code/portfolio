@@ -15,18 +15,21 @@ export default function OpengraphImage() {
           flexDirection: "column",
           justifyContent: "center",
           padding: "80px 90px",
-          background: "#0b1120",
-          fontFamily: "Arial, Helvetica, sans-serif",
+          background: "#05090f",
+          backgroundImage:
+            "linear-gradient(rgba(34,229,255,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(34,229,255,0.08) 1px, transparent 1px)",
+          backgroundSize: "56px 56px",
+          fontFamily: "monospace",
         }}
       >
         <div
           style={{
             display: "flex",
-            fontSize: 28,
+            fontSize: 26,
             fontWeight: 700,
-            letterSpacing: 4,
+            letterSpacing: 6,
             textTransform: "uppercase",
-            color: "#60a5fa",
+            color: "#22e5ff",
           }}
         >
           {profile.title}
@@ -36,9 +39,10 @@ export default function OpengraphImage() {
             display: "flex",
             fontSize: 96,
             fontWeight: 700,
-            color: "#f1f5f9",
+            color: "#e6f4f8",
             marginTop: 20,
             letterSpacing: -2,
+            fontFamily: "Arial, Helvetica, sans-serif",
           }}
         >
           {profile.name}
@@ -46,9 +50,10 @@ export default function OpengraphImage() {
         <div
           style={{
             display: "flex",
-            fontSize: 34,
-            color: "#94a3b8",
+            fontSize: 32,
+            color: "#7d94a3",
             marginTop: 24,
+            fontFamily: "Arial, Helvetica, sans-serif",
           }}
         >
           {profile.tagline}
@@ -56,12 +61,12 @@ export default function OpengraphImage() {
         <div
           style={{
             display: "flex",
-            fontSize: 26,
-            color: "#60a5fa",
+            fontSize: 24,
+            color: "#22e5ff",
             marginTop: 60,
           }}
         >
-          {profile.location} • {profile.email}
+          {profile.location} · {profile.email}
         </div>
       </div>
     ),

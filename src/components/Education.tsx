@@ -1,7 +1,5 @@
 import { education } from "@/data/cv";
 
-const palette = ["text-accent", "text-accent-2", "text-accent-3", "text-accent-4"];
-
 export default function Education() {
   return (
     <section id="education" className="border-t border-border bg-surface">
@@ -10,14 +8,12 @@ export default function Education() {
           Education
         </h2>
         <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2">
-          {education.map((item, i) => (
+          {education.map((item) => (
             <div
               key={item.title}
-              className="rounded-xl border border-border bg-background p-5"
+              className="rounded-md border border-border bg-background p-5"
             >
-              <p className={`text-sm font-medium ${palette[i % palette.length]}`}>
-                {item.period}
-              </p>
+              <p className="font-mono text-xs text-accent">{item.period}</p>
               <h3 className="mt-1 text-base font-semibold leading-snug">
                 {item.title}
               </h3>

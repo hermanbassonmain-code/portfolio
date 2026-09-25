@@ -13,12 +13,12 @@ export default function Experience() {
             key={`${job.company}-${job.start}`}
             className="relative border-l border-border pl-6"
           >
-            <div className="gradient-bg absolute -left-[5px] top-1.5 h-2.5 w-2.5 rounded-full" />
+            <div className="glow-accent absolute -left-[5px] top-1.5 h-2.5 w-2.5 rounded-full bg-accent" />
             <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
               <h3 className="text-lg font-semibold">
                 {job.role} <span className="text-muted">— {job.company}</span>
               </h3>
-              <p className="text-sm text-muted whitespace-nowrap">
+              <p className="font-mono text-xs text-muted whitespace-nowrap">
                 {job.start} – {job.end}
               </p>
             </div>
